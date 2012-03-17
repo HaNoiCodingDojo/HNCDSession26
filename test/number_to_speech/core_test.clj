@@ -103,3 +103,6 @@
 
 (deftest test-input-100-output-one-hundred
   (is (= "one hundred" (number->speech 100))))
+
+(deftest test-input-101-output-one-hundred-and-one
+  (is (= "one hundred and one" (number->speech 101))))
