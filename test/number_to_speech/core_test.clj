@@ -36,3 +36,6 @@
 (deftest test-input-20-output-twenty
   (is (= "twenty" (number->speech 20)))
   )
+
+(deftest test-input-21-output-twenty-one
+  (is (= "twenty one" (number->speech 21))))
