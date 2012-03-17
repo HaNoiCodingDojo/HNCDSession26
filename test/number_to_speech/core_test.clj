@@ -4,8 +4,7 @@
         ))
 
 (defn number->speech [number]
-  (cond (= 0 number)  "zero"
-        (= 1 number)  "one"
+  (cond (= 1 number)  "one"
         (= 2 number)  "two"
         (= 3 number)  "three"
         (= 4 number)  "four"
@@ -14,6 +13,7 @@
         (= 7 number)  "seven"
         (= 8 number)  "eight"
         (= 9 number)  "nine"
+        :else "zero"
         )
   )
 
