@@ -8,3 +8,6 @@
 
 (deftest test-input-0-output-zero
   (is (= "zero" (number->speech 0))))
+
+(deftest test-input-1-output-one
+  (is (= "one"  (number->speech 1))))
