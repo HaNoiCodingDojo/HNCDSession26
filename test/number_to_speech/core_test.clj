@@ -29,7 +29,7 @@
   (cond (and (<= 1 number)
              (<= number 9))
         (digit->speech number)
-
+        (= 0 number) "zero"
         (= (mod number 10) 0) (tens->speech number)
         
         (and (<= 21 number)
@@ -40,7 +40,7 @@
              (<= number 39))
         (str (number->speech 30) " " (digit->speech (mod number 10)))
 
-        :else "zero"
+        :else "NAN"
         )
   )
 
