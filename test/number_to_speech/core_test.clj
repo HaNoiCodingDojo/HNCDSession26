@@ -33,6 +33,16 @@
         (= 0 number) "zero"
         (= 100 number) (str (digit->speech 1) " " "hundred")
 
+        (= 11 number)  "eleven"
+        (= 12 number)  "twelve"
+        (= 13 number)  "thirteen"
+        (= 14 number)  "fourteen"
+        (= 15 number)  "fifteen"
+        (= 16 number)  "sixteen"
+        (= 17 number)  "seventeen"
+        (= 18 number)  "eighteen"
+        (= 19 number)  "nineteen"
+
         (and (<= 101 number)
              (<= number 199))
         (str (digit->speech 1) " " "hundred" " and " (number->speech (mod number 100))
