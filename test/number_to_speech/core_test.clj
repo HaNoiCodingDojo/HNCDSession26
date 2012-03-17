@@ -30,14 +30,11 @@
              (<= number 9))
         (digit->speech number)
 
-        (= 20 number) "twenty"
+        (= (mod number 10) 0) (tens->speech number)
         
-
         (and (<= 21 number)
              (<= number 29))
         (str (number->speech 20) " " (digit->speech (mod number 10)))
-
-        (= 30 number) "thirty"
 
         (and (<= 31 number)
              (<= number 39))
