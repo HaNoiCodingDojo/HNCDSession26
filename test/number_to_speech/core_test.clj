@@ -14,15 +14,11 @@
         (= 8 number)  "eight"
         (= 9 number)  "nine"
         (= 20 number) "twenty"
-        (= 21 number) (str (number->speech 20) " " (number->speech 1))
-        (= 22 number) (str (number->speech 20) " " (number->speech 2))
-        (= 23 number) (str (number->speech 20) " " (number->speech 3))
-        (= 24 number) (str (number->speech 20) " " (number->speech 4))
-        (= 25 number) (str (number->speech 20) " " (number->speech 5))
-        (= 26 number) (str (number->speech 20) " " (number->speech 6))
-        (= 27 number) (str (number->speech 20) " " (number->speech 7))
-        (= 28 number) (str (number->speech 20) " " (number->speech 8))
-        (= 29 number) (str (number->speech 20) " " (number->speech 9))
+
+        (and (<= 21 number)
+             (<= number 29))
+        (str (number->speech 20) " " (number->speech (mod number 10)))
+
         :else "zero"
         )
   )
