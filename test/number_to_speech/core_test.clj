@@ -14,12 +14,24 @@
         (= 8 number)  "eight"
         (= 9 number)  "nine"))
 
+(defn tens->speech [number]
+  (cond (= 10 number)  "ten"
+        (= 20 number)  "twenty"
+        (= 30 number)  "thirty"
+        (= 40 number)  "fourty"
+        (= 50 number)  "fifty"
+        (= 60 number)  "sixty"
+        (= 70 number)  "seventy"
+        (= 80 number)  "eighty"
+        (= 90 number)  "ninety"))
+
 (defn number->speech [number]
   (cond (and (<= 1 number)
              (<= number 9))
         (digit->speech number)
 
         (= 20 number) "twenty"
+        
 
         (and (<= 21 number)
              (<= number 29))
