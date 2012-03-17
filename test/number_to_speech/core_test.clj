@@ -73,7 +73,7 @@
 
 (deftest test-input-30-to-39-output-thirty-to-thirtynine
   (is (= "thirty" (number->speech 30)))
-  (is (= "thirty one" (number->speech 31)))  
+  (is (= "thirty one" (number->speech 31)))
   (is (= "thirty two" (number->speech 32)))
   (is (= "thirty three" (number->speech 33)))
   (is (= "thirty four" (number->speech 34)))
@@ -82,4 +82,17 @@
   (is (= "thirty seven" (number->speech 37)))
   (is (= "thirty eight" (number->speech 38)))
   (is (= "thirty nine" (number->speech 39)))
+  )
+
+(deftest test-input-90-to-99-output-ninety-to-ninetynine
+  (is (= "ninety" (number->speech 90)))
+  (is (= "ninety one" (number->speech 91)))
+  (is (= "ninety two" (number->speech 92)))
+  (is (= "ninety three" (number->speech 93)))
+  (is (= "ninety four" (number->speech 94)))
+  (is (= "ninety five" (number->speech 95)))
+  (is (= "ninety six" (number->speech 96)))
+  (is (= "ninety seven" (number->speech 97)))
+  (is (= "ninety eight" (number->speech 98)))
+  (is (= "ninety nine" (number->speech 99)))
   )
