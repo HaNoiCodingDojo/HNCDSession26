@@ -39,7 +39,14 @@
   (is (= "twenty" (number->speech 20)))
   )
 
-(deftest test-input-21-output-twenty-one
+(deftest test-input-21-to-29-output-twenty-one-to-twenty-nine
   (is (= "twenty one" (number->speech 21)))
   (is (= "twenty two" (number->speech 22)))
+  (is (= "twenty three" (number->speech 23)))
+  (is (= "twenty four" (number->speech 24)))
+  (is (= "twenty five" (number->speech 25)))
+  (is (= "twenty six" (number->speech 26)))
+  (is (= "twenty seven" (number->speech 27)))
+  (is (= "twenty eight" (number->speech 28)))
+  (is (= "twenty nine" (number->speech 29)))
   )
