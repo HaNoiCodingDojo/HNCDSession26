@@ -15,7 +15,7 @@
         (= 9 number)  "nine"
         (= 20 number) "twenty"
         (= 21 number) (str (number->speech 20) " " (number->speech 1))
-        (= 22 number) (str "twenty" " " (number->speech 2))
+        (= 22 number) (str (number->speech 20) " " (number->speech 2))
         :else "zero"
         )
   )
