@@ -23,7 +23,7 @@
 
         (and (<= 21 number)
              (<= number 29))
-        (str (number->speech 20) " " (number->speech (mod number 10)))
+        (str (number->speech 20) " " (digit->speech (mod number 10)))
 
         :else "zero"
         )
