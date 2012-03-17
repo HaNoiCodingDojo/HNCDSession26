@@ -3,7 +3,7 @@
         number-to-speech.core
         ))
 
-(defn number->speech [number]
+(defn digit->speech [number]
   (cond (= 1 number)  "one"
         (= 2 number)  "two"
         (= 3 number)  "three"
@@ -12,7 +12,13 @@
         (= 6 number)  "six"
         (= 7 number)  "seven"
         (= 8 number)  "eight"
-        (= 9 number)  "nine"
+        (= 9 number)  "nine"))
+
+(defn number->speech [number]
+  (cond (and (<= 1 number)
+             (<= number 9))
+        (digit->speech number)
+
         (= 20 number) "twenty"
 
         (and (<= 21 number)
