@@ -59,3 +59,16 @@
   (is (= "twenty eight" (number->speech 28)))
   (is (= "twenty nine" (number->speech 29)))
   )
+
+(deftest test-input-30-to-39-output-thirty-to-thirtynine
+  (is (= "thirty" (number->speech 30)))
+  (is (= "thirty one" (number->speech 31)))  
+  (is (= "thirty two" (number->speech 32)))
+  (is (= "thirty three" (number->speech 33)))
+  (is (= "thirty four" (number->speech 34)))
+  (is (= "thirty five" (number->speech 35)))
+  (is (= "thirty six" (number->speech 36)))
+  (is (= "thirty seven" (number->speech 37)))
+  (is (= "thirty eight" (number->speech 38)))
+  (is (= "thirty nine" (number->speech 39)))
+  )
