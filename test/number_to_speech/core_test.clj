@@ -31,10 +31,11 @@
         (digit->speech number)
         (= 0 number) "zero"
         (= (mod number 10) 0) (tens->speech number)
-        
+
         (and (<= 21 number)
-             (<= number 39))
-        (str (tens->speech (- number (mod number 10))) " " (digit->speech (mod number 10)))
+             (<= number 99))
+        (str (tens->speech (- number (mod number 10))) " "
+             (digit->speech (mod number 10)))
 
         :else "NAN"
         )
