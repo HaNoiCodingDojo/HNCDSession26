@@ -13,6 +13,7 @@
         (= 7 number)  "seven"
         (= 8 number)  "eight"
         (= 9 number)  "nine"
+        (= 20 number) "twenty"
         :else "zero"
         )
   )
