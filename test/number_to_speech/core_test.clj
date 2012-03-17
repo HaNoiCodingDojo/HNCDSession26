@@ -46,7 +46,7 @@
         (and (<= 121 number)
              (<= number 199))
         (str (digit->speech 1) " " "hundred" " and " (number->speech (mod number 100))
-             (digit->speech (mod number 10)))
+             )
 
         :else "NAN"
         )
