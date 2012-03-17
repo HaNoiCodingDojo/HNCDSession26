@@ -33,6 +33,7 @@
         (= 0 number) "zero"
         (= 100 number) (str (digit->speech 1) " " "hundred")
         (= 101 number) (str (digit->speech 1) " " "hundred" " and " (number->speech 1))
+        (= 110 number) (str (digit->speech 1) " " "hundred" " and " (number->speech 10))
 
         (= (mod number 10) 0) (tens->speech number)
 
