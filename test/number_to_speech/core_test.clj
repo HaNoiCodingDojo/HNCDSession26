@@ -13,3 +13,6 @@
 
 (deftest test-input-1-output-one
   (is (= "one"  (number->speech 1))))
+
+(deftest test-input-2-output-two
+  (is (= "two"  (number->speech 2))))
