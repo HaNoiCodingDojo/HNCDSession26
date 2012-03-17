@@ -31,6 +31,8 @@
         (digit->speech number)
 
         (= 0 number) "zero"
+        (= 100 number) "one hundred"
+
         (= (mod number 10) 0) (tens->speech number)
 
         (and (<= 21 number)
