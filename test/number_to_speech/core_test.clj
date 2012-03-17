@@ -29,6 +29,7 @@
   (cond (and (<= 1 number)
              (<= number 9))
         (digit->speech number)
+
         (= 0 number) "zero"
         (= (mod number 10) 0) (tens->speech number)
 
@@ -97,3 +98,6 @@
   (is (= "ninety eight" (number->speech 98)))
   (is (= "ninety nine" (number->speech 99)))
   )
+
+(deftest test-input-100-output-one-hundred
+  (is (= "one hundred") (number->speech 100)))
