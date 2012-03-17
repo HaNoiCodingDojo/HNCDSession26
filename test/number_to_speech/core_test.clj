@@ -34,11 +34,11 @@
         
         (and (<= 21 number)
              (<= number 29))
-        (str (number->speech 20) " " (digit->speech (mod number 10)))
+        (str (tens->speech 20) " " (digit->speech (mod number 10)))
 
         (and (<= 31 number)
              (<= number 39))
-        (str (number->speech 30) " " (digit->speech (mod number 10)))
+        (str (tens->speech 30) " " (digit->speech (mod number 10)))
 
         :else "NAN"
         )
