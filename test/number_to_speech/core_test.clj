@@ -25,6 +25,12 @@
              (<= number 29))
         (str (number->speech 20) " " (digit->speech (mod number 10)))
 
+        (= 30 number) "thirty"
+
+        (and (<= 31 number)
+             (<= number 39))
+        (str (number->speech 30) " " (digit->speech (mod number 10)))
+
         :else "zero"
         )
   )
