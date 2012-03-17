@@ -4,7 +4,9 @@
         ))
 
 (defn number->speech [number]
-  "zero")
+  (cond (zero? number)   "zero"
+        :else            "one")
+  )
 
 (deftest test-input-0-output-zero
   (is (= "zero" (number->speech 0))))
