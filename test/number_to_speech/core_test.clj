@@ -6,7 +6,8 @@
 (defn number->speech [number]
   (cond (= 0 number)  "zero"
         (= 1 number)  "one"
-        :else         "two")
+        (= 2 number)  "two"
+        (= 3 number)  "three")
   )
 
 (deftest test-input-0-output-zero
