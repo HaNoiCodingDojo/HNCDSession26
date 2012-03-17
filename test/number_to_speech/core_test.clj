@@ -100,4 +100,4 @@
   )
 
 (deftest test-input-100-output-one-hundred
-  (is (= "one hundred") (number->speech 100)))
+  (is (= "one hundred" (number->speech 100))))
