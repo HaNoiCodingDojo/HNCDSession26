@@ -32,9 +32,6 @@
 
         (= 0 number) "zero"
         (= 100 number) (str (digit->speech 1) " " "hundred")
-        (= 101 number) (str (digit->speech 1) " " "hundred" " and " (number->speech 1))
-        (= 110 number) (str (digit->speech 1) " " "hundred" " and " (number->speech 10))
-        (= 120 number) (str (digit->speech 1) " " "hundred" " and " (number->speech 20))
 
         (= (mod number 10) 0) (tens->speech number)
 
@@ -43,7 +40,7 @@
         (str (tens->speech (- number (mod number 10))) " "
              (digit->speech (mod number 10)))
 
-        (and (<= 121 number)
+        (and (<= 101 number)
              (<= number 199))
         (str (digit->speech 1) " " "hundred" " and " (number->speech (mod number 100))
              )
