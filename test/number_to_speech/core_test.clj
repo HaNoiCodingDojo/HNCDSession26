@@ -13,11 +13,8 @@
 (deftest test-input-0-output-zero
   (is (= "zero" (number->speech 0))))
 
-(deftest test-input-1-output-one
-  (is (= "one"  (number->speech 1))))
-
-(deftest test-input-2-output-two
-  (is (= "two"  (number->speech 2))))
-
-(deftest test-input-3-output-three
-  (is (= "three" (number->speech 3))))
+(deftest test-input-1-to-9-output-one-to-nine
+  (is (= "one"  (number->speech 1)))
+  (is (= "two"  (number->speech 2)))
+  (is (= "three" (number->speech 3)))
+  )
