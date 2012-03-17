@@ -4,9 +4,9 @@
         ))
 
 (defn number->speech [number]
-  (cond (zero? number)   "zero"
-        (= 1 number)     "one"
-        :else            "two")
+  (cond (= 0 number)  "zero"
+        (= 1 number)  "one"
+        :else         "two")
   )
 
 (deftest test-input-0-output-zero
@@ -17,3 +17,6 @@
 
 (deftest test-input-2-output-two
   (is (= "two"  (number->speech 2))))
+
+(deftest test-input-3-output-three
+  (is (= "three" (number->speech 3))))
