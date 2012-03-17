@@ -15,6 +15,7 @@
         (= 9 number)  "nine"
         (= 20 number) "twenty"
         (= 21 number) "twenty one"
+        (= 22 number) "twenty two"
         :else "zero"
         )
   )
@@ -40,4 +41,5 @@
 
 (deftest test-input-21-output-twenty-one
   (is (= "twenty one" (number->speech 21)))
+  (is (= "twenty two" (number->speech 22)))
   )
