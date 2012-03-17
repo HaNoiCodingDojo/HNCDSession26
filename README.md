@@ -1,15 +1,20 @@
 # number-to-speech
 
-I'm an app. Or maybe I'm a library? I haven't decided yet. 
+## Bs
 
-The choice is up to you!
+* Fun as usual (everyone enjoys the session)
+* Good problem for **Coding Dojo beginners**
+* Interesting to learn a procedural way of programming
 
-## Usage
+## Cs
 
-FIXME
+* Large domain of repetitive tests
+* Pilots have to learn to summarize and explain:
+  - What have been done
+  - Where s/he's trying to go
 
 ## License
 
-Copyright © 2012 FIXME
+Copyright © 2012 Hanoi Coding Dojo
 
 Distributed under the Eclipse Public License, the same as Clojure.
