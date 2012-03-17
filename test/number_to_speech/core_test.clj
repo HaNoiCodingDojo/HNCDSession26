@@ -7,7 +7,14 @@
   (cond (= 0 number)  "zero"
         (= 1 number)  "one"
         (= 2 number)  "two"
-        (= 3 number)  "three")
+        (= 3 number)  "three"
+        (= 4 number)  "four"
+        (= 5 number)  "five"
+        (= 6 number)  "six"
+        (= 7 number)  "seven"
+        (= 8 number)  "eight"
+        (= 9 number)  "nine"
+        )
   )
 
 (deftest test-input-0-output-zero
