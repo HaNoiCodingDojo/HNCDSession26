@@ -37,15 +37,13 @@
              (<= number 199))
         (str (digit->speech 1) " " "hundred" " and " (number->speech (mod number 100))
              )
-        
+
         (= (mod number 10) 0) (tens->speech number)
 
         (and (<= 21 number)
              (<= number 99))
         (str (tens->speech (- number (mod number 10))) " "
              (digit->speech (mod number 10)))
-
-
 
         :else "NAN"
         )
@@ -65,6 +63,17 @@
   (is (= "eight" (number->speech 8)))
   (is (= "nine" (number->speech 9)))
   )
+
+(deftest test-input-11-to-19-output-eleven-nineteen
+  (is (= "eleven" (number->speech 11)))
+  (is (= "twelve" (number->speech 12)))
+  (is (= "thirteen" (number->speech 13)))
+  (is (= "fourteen" (number->speech 14)))
+  (is (= "fifteen" (number->speech 15)))
+  (is (= "sixteen" (number->speech 16)))
+  (is (= "seventeen" (number->speech 17)))
+  (is (= "eighteen" (number->speech 18)))
+  (is (= "nineteen" (number->speech 19))))
 
 (deftest test-input-20-output-twenty
   (is (= "twenty" (number->speech 20)))
