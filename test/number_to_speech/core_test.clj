@@ -43,6 +43,11 @@
         (str (tens->speech (- number (mod number 10))) " "
              (digit->speech (mod number 10)))
 
+        (and (<= 121 number)
+             (<= number 199))
+        (str (tens->speech (- number (mod number 10))) " "
+             (digit->speech (mod number 10)))
+
         :else "NAN"
         )
   )
